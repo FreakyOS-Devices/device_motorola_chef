@@ -26,7 +26,7 @@ $(call inherit-product, device/motorola/chef/device.mk)
 # Inherit some common PixelExperience stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/freaky/config/common_full_phone.mk)
 
 # A/B updater
 AB_OTA_UPDATER := true
@@ -64,7 +64,7 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
 # Device identifiers
 PRODUCT_DEVICE := chef
-PRODUCT_NAME := aosp_chef
+PRODUCT_NAME := freaky_chef
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := One Power
 PRODUCT_MANUFACTURER := Motorola
@@ -77,3 +77,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="chef_sprout-user 10 QPTS30.6
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := google/flame/flame:10/QQ3A.200705.002/6506677:user/release-keys
+
+CUSTOM_BUILD_TYPE := OFFICIAL
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.user=Amith_Acharya
