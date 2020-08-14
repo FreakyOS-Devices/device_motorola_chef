@@ -1,20 +1,18 @@
 [
   {
-    "remote":     "github",
-    "repository": "FreakyOS-Devices/android_kernel_motorola_msm8998",
+    "repository": "kernel_motorola_chef",
     "target_path": "kernel/motorola/msm8998",
     "branch":      "still_alive"
   },
   {
-    "repository"  : "FreakyOS-Devices/vendor_motorola_chef",
-    "target_path" : "vendor/motorola/chef",
-    "branch"      : "still_alive",
-    "remote"      : "github"
+    "repository"  : "proprietary_vendor_motorola",
+    "target_path" : "vendor/motorola",
+    "branch"      : "still_alive"
   },
   {
-    "remote":      "github",
-    "repository":  "FreakyOS-Devices/device_motorola_sdm660-common",
+    "repository":  "device_motorola_sdm660-common",
     "target_path": "device/motorola/sdm660-common",
     "branch":      "still_alive"
   }
 ]
+
